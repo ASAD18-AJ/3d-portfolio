@@ -1,6 +1,7 @@
 import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
+import HeroExperience from '../components/HeroModels/HeroExperience'
 const Hero = () => {
   return (
     <section id='hero' className='relative overflow-hidden'>
@@ -35,7 +36,7 @@ const Hero = () => {
 
         <figure>
           <div className='hero-3d-layout  '>
-
+                    <HeroExperience />
           </div>
         </figure>
       </div>
