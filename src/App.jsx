@@ -13,6 +13,7 @@ const App = () => {
       <ShowcaseSection />
       <LogoSection />
       <FeatureCards />
+      <ShowcaseSection />
     </>
   )
 }
