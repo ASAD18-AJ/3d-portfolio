@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/ContactExperience";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,9 +27,10 @@ const Contact = () => {
     setLoading(true);
     try {
       await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_SERVICES_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       setFormData({ name: '', email: '', message: ''});
     } catch (error) {
@@ -56,8 +58,9 @@ const Contact = () => {
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form
-                //   onSubmit={handleSubmit}
+                  onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
+                ref={formRef}
               >
                 <div >
                   <label htmlFor="name">Name</label>
@@ -66,8 +69,8 @@ const Contact = () => {
                     id="name"
                     name="name"
                     placeholder="Your name"
-                    //   value={formData.name}
-                    //   onChange={handleChange}
+                      value={formData.name}
+                      onChange={handleChange}
                     required
                   />
                 </div>
@@ -78,8 +81,8 @@ const Contact = () => {
                     name="email"
                     id="email"
                     placeholder="Your email address"
-                    //   value={formData.email}
-                    //   onChange={handleChange}
+                      value={formData.email}
+                      onChange={handleChange}
                     required
                   />
                 </div>
@@ -91,8 +94,8 @@ const Contact = () => {
                     name="message"
                     rows="5"
                     placeholder="Your message"
-                    //   value={formData.message}
-                    //   onChange={handleChange}
+                      value={formData.message}
+                      onChange={handleChange}
                     required
                   ></textarea>
                 </div>
