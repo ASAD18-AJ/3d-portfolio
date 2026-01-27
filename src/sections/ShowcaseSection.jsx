@@ -48,12 +48,11 @@ const ShowcaseSection = () => {
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde" />
+              <img src="/images/screenshot.png" alt="Ryde"  />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Effortless Hair Perfection Made Simple with Beauty — the AI-powered app that fixes your look instantly.
               </h2>
               <p className="text-white-50 md:text-xl">
                 An app built with React Native, Expo, & TailwindCSS for a fast,
@@ -66,8 +65,9 @@ const ShowcaseSection = () => {
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
-                  src="/images/project2.png"
+                  src="/images/screenshot2.png"
                   alt="Library Management Platform"
+                  className="rounded-[30px]"
                 />
               </div>
               <h2>Library Management Platform</h2>
