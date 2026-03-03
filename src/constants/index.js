@@ -114,31 +114,85 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "HTML",
+    type: "model",
+    modelPath: "/public/models/html-logo.glb",
+    scale: 50,
+    rotation: [0, 0, 0]
+  },
+  {
+    name: "Javascript",
+    type: "model",
+    modelPath: "/public/models/javascript_1.glb",
+    scale: 0.2,
+    rotation: [0, Math.PI / 2, Math.PI / 2]
+  },
+  {
+    name: "CSS",
+    type: "img",
+    imgPath: "/public/images/skills/css-logo.png"
+  },
+  {
+    name: "ReactJs",
+    type: "model",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
+    name: "NodeJs",
+    type: "model",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    name: "MongoDB",
+    type: "model",
+    modelPath: "/models/mongodb-logo.glb",
+    scale: 35,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "SQL",
+    type: "img",
+    imgPath: "/public/images/skills/sql.png"
+  },
+  {
+    name: "MySQL",
+    type: "img",
+    imgPath: "/public/images/skills/mysql.png"
+  },
+  {
+    name: "C++",
+    type: "model",
+    modelPath: "/public/models/cpp-logo.glb",
+    scale: 40,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Python",
+    type: "model",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Nextjs",
+    type: "img",
+    imgPath: "/public/images/skills/icons8-next.js-100.png",
+    size: "w-38 h-38"
+  },
+  {
+    name: "TailwindCSS",
+    type: "model",
+    modelPath: "/public/models/tailwindcss-logo.glb",
+    scale: 40,
     rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
+    type: "model",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -152,7 +206,7 @@ const expCards = [
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Full stack Developer",
-    date: "December 2024 - Present",
+    date: "December 2024 - September 2025",
     responsibilities: [
       "Developed and maintained user-facing features for the Hostinger website.",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
