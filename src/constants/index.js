@@ -116,21 +116,21 @@ const techStackIcons = [
   {
     name: "HTML",
     type: "model",
-    modelPath: "/public/models/html-logo.glb",
+    modelPath: "/models/html-logo.glb",
     scale: 50,
     rotation: [0, 0, 0]
   },
   {
     name: "Javascript",
     type: "model",
-    modelPath: "/public/models/javascript_1.glb",
+    modelPath: "/models/javascript_1.glb",
     scale: 0.2,
     rotation: [0, Math.PI / 2, Math.PI / 2]
   },
   {
     name: "CSS",
     type: "img",
-    imgPath: "/public/images/skills/css-logo.png"
+    imgPath: "/images/skills/css-logo.png"
   },
   {
     name: "ReactJs",
@@ -156,17 +156,17 @@ const techStackIcons = [
   {
     name: "SQL",
     type: "img",
-    imgPath: "/public/images/skills/sql.png"
+    imgPath: "/images/skills/sql.png"
   },
   {
     name: "MySQL",
     type: "img",
-    imgPath: "/public/images/skills/mysql.png"
+    imgPath: "/images/skills/mysql.png"
   },
   {
     name: "C++",
     type: "model",
-    modelPath: "/public/models/cpp-logo.glb",
+    modelPath: "/models/cpp-logo.glb",
     scale: 40,
     rotation: [0, 0, 0],
   },
@@ -180,13 +180,13 @@ const techStackIcons = [
   {
     name: "Nextjs",
     type: "img",
-    imgPath: "/public/images/skills/icons8-next.js-100.png",
+    imgPath: "/images/skills/icons8-next.js-100.png",
     size: "w-38 h-38"
   },
   {
     name: "TailwindCSS",
     type: "model",
-    modelPath: "/public/models/tailwindcss-logo.glb",
+    modelPath: "/models/tailwindcss-logo.glb",
     scale: 40,
     rotation: [0, 0, 0],
   },
