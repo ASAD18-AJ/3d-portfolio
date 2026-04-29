@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './sections/Hero'
 import ShowcaseSection from './sections/ShowcaseSection';
+import AllProjects from './sections/AllProjects';
 import NavBar from './components/NavBar';
 import LogoSection from './components/LogoSection';
 import FeatureCards from './sections/FeatureCards';
@@ -16,6 +17,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <ShowcaseSection />
+      <AllProjects />
       <LogoSection />
       <FeatureCards />
       <ExperienceSection />

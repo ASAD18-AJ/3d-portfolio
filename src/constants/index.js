@@ -4,6 +4,10 @@ const navLinks = [
     link: "#work",
   },
   {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
     name: "Experience",
     link: "#experience",
   },
@@ -203,8 +207,8 @@ const expCards = [
   {
     review:
       "Asad brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    imgPath: "/images/ufs_newlogo_.jpg",
+    logoPath: "/images/ufs_newlogo_.jpg",
     title: "Full stack Developer",
     date: "December 2024 - September 2025",
     responsibilities: [
@@ -216,8 +220,8 @@ const expCards = [
   {
     review:
       "Asad’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    imgPath: "/images/jscl.png",
+    logoPath: "/images/jscl.png",
     title: "Frontend Developer",
     date: "June 2020 - December 2023",
     responsibilities: [
@@ -324,6 +328,99 @@ const socialImgs = [
   },
 ];
 
+const allProjects = [
+  {
+    id: 1,
+    title: "Effortless Hair Perfection Made Simple with Beauty",
+    description: "An AI-powered app that fixes your look instantly with advanced beauty technology.",
+    longDescription: "An innovative app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience. Features real-time hair styling suggestions powered by AI.",
+    imagePath: "/images/screenshot.png",
+    tags: ["React", "Expo", "TailwindCSS", "AI"],
+    featured: true,
+    backgroundColor: "bg-[#1c1c21]",
+  },
+  {
+    id: 2,
+    title: "Code Craft",
+    description: "A comprehensive platform for managing code resources and user interactions by Commenting and Linking on projects.",
+    longDescription: "Complete Code management system with user authentication and admin dashboard. Built with modern web technologies.",
+    imagePath: "/images/screenshot2.png",
+    tags: ["React", "Node.js", "MongoDB", "TailwindCSS"],
+    featured: true,
+    backgroundColor: "bg-[#ffefdb]",
+  },
+  {
+    id: 3,
+    title: "XORA AI Video Editor",
+    description: "A directory application showcasing startups and investment opportunities.",
+    longDescription: "A startup discovery platform featuring company profiles, investment tracking, and networking features. Built with Next.js for optimal performance.",
+    imagePath: "/images/Screenshot3.png",
+    tags: ["Next.js", "React", "MongoDB", "Tailwind CSS"],
+    featured: true,
+    backgroundColor: "bg-[#ffefdb]",
+  },
+  // {
+  //   id: 4,
+  //   title: "E-Commerce Platform",
+  //   description: "Full-featured e-commerce solution with shopping cart and payment integration.",
+  //   longDescription: "A complete e-commerce platform featuring product catalog, user authentication, shopping cart, and secure payment processing. Includes admin dashboard for inventory management.",
+  //   imagePath: "/images/screenshot.png",
+  //   tags: ["React", "Node.js", "Stripe", "MongoDB"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#1c1c21]",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Real-time Collaborative Editor",
+  //   description: "A web-based document editor with real-time collaboration features.",
+  //   longDescription: "Document collaboration tool with real-time editing, commenting, and version control. Perfect for teams working remotely on projects.",
+  //   imagePath: "/images/screenshot2.png",
+  //   tags: ["React", "WebSocket", "Firebase", "TailwindCSS"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#ffefdb]",
+  // },
+  // {
+  //   id: 6,
+  //   title: "AI Task Management System",
+  //   description: "Intelligent task management tool powered by artificial intelligence.",
+  //   longDescription: "Smart task management platform that uses AI to prioritize tasks, predict deadlines, and optimize team productivity. Includes analytics and reporting features.",
+  //   imagePath: "/images/Screenshot3.png",
+  //   tags: ["React", "Python", "TensorFlow", "PostgreSQL"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#1c1c21]",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Social Media Dashboard",
+  //   description: "Unified dashboard for managing multiple social media accounts.",
+  //   longDescription: "Comprehensive social media management tool that allows scheduling posts, tracking analytics, and engaging with audiences across multiple platforms.",
+  //   imagePath: "/images/screenshot.png",
+  //   tags: ["React", "Node.js", "Social APIs", "Chart.js"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#ffefdb]",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Weather & Climate Analytics",
+  //   description: "Advanced weather forecasting and climate data visualization tool.",
+  //   longDescription: "Weather prediction application with real-time data, historical analysis, and interactive visualizations. Powered by weather APIs and machine learning models.",
+  //   imagePath: "/images/screenshot2.png",
+  //   tags: ["React", "D3.js", "Python", "APIs"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#1c1c21]",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Portfolio Management Tool",
+  //   description: "Professional portfolio tracking and analysis for investments.",
+  //   longDescription: "Investment portfolio management platform with real-time market data, performance analytics, and diversification recommendations for individual investors.",
+  //   imagePath: "/images/Screenshot3.png",
+  //   tags: ["React", "Node.js", "Financial APIs", "MongoDB"],
+  //   featured: false,
+  //   backgroundColor: "bg-[#ffefdb]",
+  // },
+];
+
 export {
   words,
   abilities,
@@ -336,4 +433,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  allProjects,
 };

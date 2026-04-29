@@ -58,6 +58,18 @@ const ShowcaseSection = () => {
                 An app built with React Native, Expo, & TailwindCSS for a fast,
                 user-friendly experience.
               </p>
+              <a 
+                href="#projects"
+                className="cta-wrapper w-fit mt-8"
+              >
+                <div className="cta-button group">
+                  <div className="bg-circle" />
+                  <p className="text">View All Projects</p>
+                  <div className="arrow-wrapper">
+                    <img src="/images/arrow-down.svg" alt="arrow" />
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -66,21 +78,21 @@ const ShowcaseSection = () => {
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
                   src="/images/screenshot2.png"
-                  alt="Library Management Platform"
+                  alt="Code Craft"
                   className="rounded-[30px]"
                 />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>Code Craft</h2>
             </div>
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
                   src="/images/Screenshot3.png"
-                  alt="YC Directory - A startup Showcase App"
+                  alt="XORA AI Video Editor"
                   className="rounded-[30px]"
                 />
               </div>
-              <h2>YC Directory - A startup Showcase App</h2>
+              <h2>XORA AI Video Editor</h2>
             </div>
           </div>
         </div>

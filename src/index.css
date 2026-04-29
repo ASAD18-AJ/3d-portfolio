@@ -320,6 +320,74 @@ section {
       }
     }
   }
+
+  .projects-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16;
+  }
+
+  .project-card {
+    @apply relative overflow-hidden rounded-xl border border-black-50 bg-black-100 p-5 transition-all duration-300;
+
+    &:hover {
+      @apply border-white-50;
+    }
+
+    .project-image-wrapper {
+      @apply relative h-60 md:h-72 xl:h-80 overflow-hidden rounded-lg;
+
+      .project-image {
+        @apply w-full h-full object-cover transition-transform duration-500;
+      }
+
+      &:hover .project-image {
+        @apply scale-110;
+      }
+
+      .project-overlay {
+        @apply absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 transition-opacity duration-300;
+
+        .view-btn {
+          @apply px-6 py-3 bg-white text-black font-semibold rounded-lg transition-colors duration-300;
+        }
+
+        .view-btn:hover {
+          @apply bg-white-50;
+        }
+      }
+
+      &:hover .project-overlay {
+        @apply opacity-100;
+      }
+    }
+
+    .project-content {
+      @apply mt-5 flex flex-col gap-3;
+
+      .project-title {
+        @apply text-lg md:text-xl lg:text-2xl font-semibold text-white transition-colors duration-300;
+      }
+
+      .project-title:hover {
+        @apply text-white-50;
+      }
+
+      .project-description {
+        @apply text-sm md:text-base leading-relaxed line-clamp-2;
+      }
+
+      .project-tags {
+        @apply flex flex-wrap gap-2 mt-4;
+
+        .tag {
+          @apply text-xs md:text-sm px-3 py-1 bg-black-200 text-white-50 rounded-full transition-colors duration-300;
+        }
+
+        .tag:hover {
+          @apply bg-black-50;
+        }
+      }
+    }
+  }
 }
 
 /* Hero text slider starts */
