@@ -55,7 +55,7 @@ const ShowcaseSection = () => {
                 Effortless Hair Perfection Made Simple with Beauty — the AI-powered app that fixes your look instantly.
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with ReactJS, Expo, & TailwindCSS for a fast,
+                An app built with ReactJS, React Native, NextJS, & TailwindCSS for a fast,
                 user-friendly experience.
               </p>
               <a 
