@@ -75,8 +75,9 @@ const ShowcaseSection = () => {
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
-                  src="/images/project3.png"
-                  alt="Library Management Platform"
+                  src="/images/Screenshot3.png"
+                  alt="YC Directory - A startup Showcase App"
+                  className="rounded-[30px]"
                 />
               </div>
               <h2>YC Directory - A startup Showcase App</h2>
