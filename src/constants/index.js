@@ -111,7 +111,7 @@ const techStackImgs = [
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Git",
     imgPath: "/images/logos/git.svg",
   },
 ];
@@ -125,7 +125,7 @@ const techStackIcons = [
     rotation: [0, 0, 0]
   },
   {
-    name: "Javascript",
+    name: "JavaScript",
     type: "model",
     modelPath: "/models/javascript_1.glb",
     scale: 0.2,
@@ -137,14 +137,14 @@ const techStackIcons = [
     imgPath: "/images/skills/css-logo.png"
   },
   {
-    name: "ReactJs",
+    name: "React",
     type: "model",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "NodeJs",
+    name: "Node.js",
     type: "model",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
@@ -182,67 +182,158 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Nextjs",
+    name: "Next.js",
     type: "img",
     imgPath: "/images/skills/icons8-next.js-100.png",
     size: "w-38 h-38"
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind CSS",
     type: "model",
     modelPath: "/models/tailwindcss-logo.glb",
     scale: 40,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git",
     type: "model",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
+  ...[
+  {
+    "name": "TypeScript",
+    "type": "text",
+    "mark": "TS"
+  },
+  {
+    "name": "Redux Toolkit",
+    "type": "text",
+    "mark": "RTK"
+  },
+  {
+    "name": "Express.js",
+    "type": "text",
+    "mark": "EX"
+  },
+  {
+    "name": "FastAPI",
+    "type": "text",
+    "mark": "API"
+  },
+  {
+    "name": "Flask",
+    "type": "text",
+    "mark": "FL"
+  },
+  {
+    "name": "REST APIs",
+    "type": "text",
+    "mark": "REST"
+  },
+  {
+    "name": "JWT",
+    "type": "text",
+    "mark": "JWT"
+  },
+  {
+    "name": "OAuth",
+    "type": "text",
+    "mark": "AUTH"
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "text",
+    "mark": "PG"
+  },
+  {
+    "name": "OpenAI API",
+    "type": "text",
+    "mark": "AI"
+  },
+  {
+    "name": "Scikit-learn",
+    "type": "text",
+    "mark": "ML"
+  },
+  {
+    "name": "AWS S3",
+    "type": "text",
+    "mark": "S3"
+  },
+  {
+    "name": "AWS EC2",
+    "type": "text",
+    "mark": "EC2"
+  },
+  {
+    "name": "Docker",
+    "type": "text",
+    "mark": "DK"
+  },
+  {
+    "name": "Linux",
+    "type": "text",
+    "mark": "LX"
+  },
+  {
+    "name": "GitHub",
+    "type": "text",
+    "mark": "GH"
+  },
+  {
+    "name": "Postman",
+    "type": "text",
+    "mark": "PM"
+  }
+]
 ];
 
 const expCards = [
   {
-    review:
-      "Asad brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/ufs_newlogo_.jpg",
-    logoPath: "/images/ufs_newlogo_.jpg",
-    title: "Full stack Developer",
-    date: "December 2024 - September 2025",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
+    "company": "UFS Networks",
+    "title": "AI & Full Stack Developer",
+    "date": "June 2026 – Present",
+    "location": "Remote / New Delhi",
+    "review": "Current role · AI and full stack development",
+    "imgPath": "/images/ufs_newlogo_.jpg",
+    "logoPath": "/images/ufs_newlogo_.jpg",
+    "responsibilities": [
+      "Innovora: develop across React, Next.js, Python and FastAPI; migrate the React frontend to Next.js App Router with restructured routes, shared layouts and reusable components.",
+      "Innovora: adapt authentication contexts and route guards; debug JWT credential validation, authentication initialization and protected-page access.",
+      "Innovora: develop FastAPI backend features and integrate REST APIs; resolve routing, module import, API response and network issues.",
+      "Other UFS products: build CRM landing, login and registration pages, work on OpenAI integrations, and support AWS S3 / EC2 deployment workflows."
+    ]
   },
   {
-    review:
-      "Asad’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/jscl.png",
-    logoPath: "/images/jscl.png",
-    title: "Frontend Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
+    "company": "UFS Networks",
+    "title": "Full Stack Developer Intern",
+    "date": "December 2024 – September 2025",
+    "location": "New Delhi",
+    "review": "Internship · Recruitment workflows",
+    "imgPath": "/images/ufs_newlogo_.jpg",
+    "logoPath": "/images/ufs_newlogo_.jpg",
+    "responsibilities": [
+      "Built resume processing with AWS S3 and OpenAI APIs to extract structured candidate skills, education and experience.",
+      "Developed recruiter dashboards for structured candidate information.",
+      "Integrated Zoom interview scheduling, automated email invitations and a calendar-style dashboard."
+    ]
   },
-  // {
-  //   review:
-  //     "Asad’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-  //   imgPath: "/images/exp3.png",
-  //   logoPath: "/images/logo3.png",
-  //   title: "React Native Developer",
-  //   date: "March 2019 - May 2020",
-  //   responsibilities: [
-  //     "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-  //     "Improved app performance and user experience through code optimization and testing.",
-  //     "Coordinated with the product team to implement features based on feedback.",
-  //   ],
-  // },
+  {
+    "company": "Jaipur Smart City Limited",
+    "title": "Frontend Developer Intern",
+    "date": "July 2024 – October 2024",
+    "location": "Jaipur, Rajasthan",
+    "review": "Internship · Surveillance interfaces",
+    "imgPath": "/images/jscl.png",
+    "logoPath": "/images/jscl.png",
+    "responsibilities": [
+      "Developed React, TypeScript and Redux Toolkit surveillance interfaces with multi-camera streams, maps, incident tracking, notifications and role-based access.",
+      "Applied lazy loading and code splitting.",
+      "Labelled Roboflow datasets and collaborated with the ML team to integrate detection outputs."
+    ]
+  }
 ];
 
 const expLogos = [
@@ -332,50 +423,56 @@ const allProjects = [
   {
     id: 1,
     title: "Effortless Hair Perfection Made Simple with Beauty",
+    hidden: true,
     description: "An AI-powered app that fixes your look instantly with advanced beauty technology.",
-    longDescription: "An innovative app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience. Features real-time hair styling suggestions powered by AI.",
-    imagePath: "/images/screenshot.png",
-    tags: ["React", "Expo", "TailwindCSS", "AI"],
-    featured: true,
+    longDescription: "An innovative app built with React Native, Expo, & Tailwind CSS for a fast, user-friendly experience. Features real-time hair styling suggestions powered by AI.",
+    imagePath: "/images/hairAnalysis.png",
+    tags: ["React", "Expo", "Tailwind CSS", "AI"],
+    featured: false,
     backgroundColor: "bg-[#1c1c21]",
+    projectLink: "#",
   },
   {
     id: 2,
     title: "Code Craft",
     description: "A comprehensive platform for managing code resources and user interactions by Commenting and Linking on projects.",
     longDescription: "Complete Code management system with user authentication and admin dashboard. Built with modern web technologies.",
-    imagePath: "/images/screenshot2.png",
-    tags: ["React", "Node.js", "MongoDB", "TailwindCSS"],
+    imagePath: "/images/CodeCraft.png",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     featured: true,
     backgroundColor: "bg-[#ffefdb]",
+    projectLink: "#",
   },
   {
     id: 3,
     title: "XORA AI Video Editor",
-    description: "A directory application showcasing startups and investment opportunities.",
-    longDescription: "A startup discovery platform featuring company profiles, investment tracking, and networking features. Built with Next.js for optimal performance.",
-    imagePath: "/images/Screenshot3.png",
+    contentNote: "Project details pending confirmation: the existing description refers to a startup directory, while the title refers to a video editor.",
+    description: "Project details pending confirmation: the title and existing startup-directory description conflict.",
+    longDescription: "The existing title identifies a video editor, while the previous description identified a startup directory. Functionality and technology details need confirmation.",
+    imagePath: "/images/Xora.png",
     tags: ["Next.js", "React", "MongoDB", "Tailwind CSS"],
     featured: true,
     backgroundColor: "bg-[#ffefdb]",
+    projectLink: "#",
   },
-  // {
-  //   id: 4,
-  //   title: "E-Commerce Platform",
-  //   description: "Full-featured e-commerce solution with shopping cart and payment integration.",
-  //   longDescription: "A complete e-commerce platform featuring product catalog, user authentication, shopping cart, and secure payment processing. Includes admin dashboard for inventory management.",
-  //   imagePath: "/images/screenshot.png",
-  //   tags: ["React", "Node.js", "Stripe", "MongoDB"],
-  //   featured: false,
-  //   backgroundColor: "bg-[#1c1c21]",
-  // },
+  {
+    id: 4,
+    title: "Health Insight Web App",
+    description: "Independent symptom-based prediction prototype using an SVM model and Flask JSON API; React frontend with voice input.",
+    longDescription: "Built a symptom-based prediction prototype using an SVM model and Flask JSON API. Migrated Jinja2 views to React, added Web Speech API voice input with fuzzy phrase matching, and deployed the integrated React/Python application on Render. This prototype does not establish clinical reliability or verified prediction accuracy.",
+    imagePath: "/images/health-insight.png",
+    tags: ["React", "Tailwind CSS", "Python", "Flask", "Scikit-learn"],
+    featured: false,
+    backgroundColor: "bg-[#1c1c21]",
+    projectLink: "https://medicine-recommendation-system-z1vl.onrender.com/",
+  },
   // {
   //   id: 5,
   //   title: "Real-time Collaborative Editor",
   //   description: "A web-based document editor with real-time collaboration features.",
   //   longDescription: "Document collaboration tool with real-time editing, commenting, and version control. Perfect for teams working remotely on projects.",
-  //   imagePath: "/images/screenshot2.png",
-  //   tags: ["React", "WebSocket", "Firebase", "TailwindCSS"],
+  //   imagePath: "/images/CodeCraft.png",
+  //   tags: ["React", "WebSocket", "Firebase", "Tailwind CSS"],
   //   featured: false,
   //   backgroundColor: "bg-[#ffefdb]",
   // },
@@ -384,7 +481,7 @@ const allProjects = [
   //   title: "AI Task Management System",
   //   description: "Intelligent task management tool powered by artificial intelligence.",
   //   longDescription: "Smart task management platform that uses AI to prioritize tasks, predict deadlines, and optimize team productivity. Includes analytics and reporting features.",
-  //   imagePath: "/images/Screenshot3.png",
+  //   imagePath: "/images/Xora.png",
   //   tags: ["React", "Python", "TensorFlow", "PostgreSQL"],
   //   featured: false,
   //   backgroundColor: "bg-[#1c1c21]",
@@ -394,7 +491,7 @@ const allProjects = [
   //   title: "Social Media Dashboard",
   //   description: "Unified dashboard for managing multiple social media accounts.",
   //   longDescription: "Comprehensive social media management tool that allows scheduling posts, tracking analytics, and engaging with audiences across multiple platforms.",
-  //   imagePath: "/images/screenshot.png",
+  //   imagePath: "/images/hairAnalysis.png",
   //   tags: ["React", "Node.js", "Social APIs", "Chart.js"],
   //   featured: false,
   //   backgroundColor: "bg-[#ffefdb]",
@@ -404,7 +501,7 @@ const allProjects = [
   //   title: "Weather & Climate Analytics",
   //   description: "Advanced weather forecasting and climate data visualization tool.",
   //   longDescription: "Weather prediction application with real-time data, historical analysis, and interactive visualizations. Powered by weather APIs and machine learning models.",
-  //   imagePath: "/images/screenshot2.png",
+  //   imagePath: "/images/CodeCraft.png",
   //   tags: ["React", "D3.js", "Python", "APIs"],
   //   featured: false,
   //   backgroundColor: "bg-[#1c1c21]",
@@ -414,14 +511,58 @@ const allProjects = [
   //   title: "Portfolio Management Tool",
   //   description: "Professional portfolio tracking and analysis for investments.",
   //   longDescription: "Investment portfolio management platform with real-time market data, performance analytics, and diversification recommendations for individual investors.",
-  //   imagePath: "/images/Screenshot3.png",
+  //   imagePath: "/images/Xora.png",
   //   tags: ["React", "Node.js", "Financial APIs", "MongoDB"],
   //   featured: false,
   //   backgroundColor: "bg-[#ffefdb]",
   // },
 ];
 
+const professionalWork = [
+  {
+    "id": "innovora",
+    "title": "InnovoraAI",
+    "imagePath": "/images/InnovoraAI.png",
+    "description": "React to Next.js App Router migration, shared layouts and reusable components. Authentication contexts, JWT validation and protected routes; Python / FastAPI development and REST API integration.",
+    "tags": [
+      "React",
+      "Next.js",
+      "Python",
+      "FastAPI"
+    ],
+    "mark": "IN",
+    "caption": "Application migration & API integration"
+  },
+  {
+    "id": "recruitment",
+    "title": "TexoraAI",
+    "imagePath": "/images/TexoraAI.png",
+    "description": "AWS S3 and OpenAI resume processing, structured recruiter dashboards, Zoom interview scheduling, automated email invitations and a calendar-style dashboard.",
+    "tags": [
+      "AWS S3",
+      "OpenAI API",
+      "Zoom"
+    ],
+    "mark": "UFS",
+    "caption": "Resume processing & interview scheduling"
+  },
+  {
+    "id": "crm",
+    "title": "UnifiedCRM",
+    "imagePath": "/images/unifiedCRM.png",
+    "description": "Landing, login and registration pages for a UFS CRM product. Other UFS contributions include OpenAI integrations and support for AWS S3 / EC2 deployment workflows, separate from Innovora.",
+    "tags": [
+      "CRM",
+      "Authentication",
+      "AWS"
+    ],
+    "mark": "CRM",
+    "caption": "Landing & authentication pages"
+  }
+];
+
 export {
+  professionalWork,
   words,
   abilities,
   logoIconsList,

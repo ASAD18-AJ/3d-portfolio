@@ -6,10 +6,16 @@ import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ExperienceSection = () => {
 
   useGSAP(() => {
-    gsap.utils.toArray('.timeline-card').forEach((card) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.set("#experience .timeline", { scaleY: 0 });
+      return;
+    }
+    gsap.utils.toArray('#experience .timeline-card').forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -22,21 +28,19 @@ const ExperienceSection = () => {
         }
       })
     })
-    gsap.to('.timeline', {
+    gsap.to('#experience .timeline', {
       transformOrigin: 'bottom bottom',
       ease: 'power1.inOut',
       scrollTrigger: {
-        trigger: '.timeline',
+        trigger: '#experience .timeline',
         start: 'top center',
         end: '70% center',
         onUpdate: (self) => {
-          gsap.to('.timeline', {
-            scaleY: 1 - self.progress,
-          })
+          gsap.set('#experience .timeline', { scaleY: 1 - self.progress })
         }
       },
     })
-    gsap.utils.toArray('.expText').forEach((text) => {
+    gsap.utils.toArray('#experience .expText').forEach((text) => {
       gsap.from(text, {
         xPercent: 0,
         opacity: 0,
@@ -68,7 +72,7 @@ const ExperienceSection = () => {
                 <div className="xl:w-2/6">
                     <GlowCard card={card} index={index}>
                         <div>
-                            <img src={card.imgPath} alt={card.title} />
+                            <img src={card.imgPath} alt={card.company} />
                         </div>
                     </GlowCard>
                 </div>
@@ -81,10 +85,12 @@ const ExperienceSection = () => {
                       </div>
                       <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                           <div className="timeline-logo">
-                            <img src={card.logoPath} alt="logo" />
+                            <img src={card.logoPath} alt={`${card.company} logo`} />
                           </div>
                           <div className="">
-                            <h1 className="font-semibold text-3xl">{card.title}</h1>
+                            <h2 className="font-semibold text-3xl">{card.title}</h2>
+                            <p className="mt-3 text-xl text-white-50">{card.company}</p>
+                            <p className="mt-2 text-blue-50">{card.location}</p>
                             <p className="my-5 text-white-50">📆 {card.date}</p>
                             <p className="text-[#839cb5] italic">Responsibilities</p>
                             <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">

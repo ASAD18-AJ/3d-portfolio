@@ -12,6 +12,7 @@ const AllProjects = () => {
   const projectsRef = useRef([]);
 
   useGSAP(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // Animate section title
     gsap.fromTo(
       sectionRef.current,
@@ -45,16 +46,16 @@ const AllProjects = () => {
     <section id="projects" className="flex-center section-padding">
       <div className="w-full" ref={sectionRef}>
         <TitleHeader
-          title="All Projects"
-          sub="🚀 Portfolio"
+          title="Independent Projects"
+          sub="Personal projects & prototypes"
         />
 
         <div className="mt-16 projects-grid">
-          {allProjects.map((project, index) => (
+          {allProjects.filter(project => !project.hidden).map((project, index) => (
             <div
               key={project.id}
               ref={(el) => (projectsRef.current[index] = el)}
-              className={`project-card group cursor-pointer ${
+              className={`project-card group ${
                 project.featured ? "featured" : ""
               }`}
             >
@@ -65,30 +66,28 @@ const AllProjects = () => {
                   className="project-image"
                 />
                 <div className="project-overlay">
-                  <span className="view-btn">View Details</span>
+                  {project.projectLink && project.projectLink !== "#" ? <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="view-btn" aria-label={`Open ${project.title} live demo`}>Live Demo</a> : <span className="view-btn">Live link unavailable</span>}
                 </div>
               </div>
 
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
-                <p className="project-description text-white-50">
-                  {project.description}
+                <p className="text-sm md:text-base leading-relaxed text-white-50">
+                  {project.longDescription}
                 </p>
 
                 <div className="project-tags">
-                  {project.tags.slice(0, 3).map((tag, idx) => (
-                    <span key={idx} className="tag">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="tag">
                       {tag}
                     </span>
                   ))}
-                  {project.tags.length > 3 && (
-                    <span className="tag">+{project.tags.length - 3}</span>
-                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
