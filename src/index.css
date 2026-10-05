@@ -388,6 +388,105 @@ section {
       }
     }
   }
+
+  /* Project Detail Modal Styles */
+  .project-detail-overlay {
+    @apply fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-5 overflow-y-auto;
+  }
+
+  .project-detail-container {
+    @apply bg-black-100 border border-black-50 rounded-2xl max-w-4xl w-full my-10;
+
+    .close-btn {
+      @apply absolute top-5 right-5 bg-black-200 hover:bg-black-50 text-white p-2 rounded-lg transition-colors duration-300 flex items-center justify-center size-10;
+
+      svg {
+        @apply w-6 h-6;
+      }
+    }
+  }
+
+  .project-detail-content {
+    @apply grid md:grid-cols-2 gap-8 p-8 relative;
+
+    .project-detail-image {
+      @apply flex items-center justify-center;
+
+      img {
+        @apply w-full h-full object-cover rounded-xl;
+      }
+    }
+
+    .project-detail-info {
+      @apply flex flex-col justify-between gap-8;
+
+      .project-detail-title {
+        @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white;
+      }
+
+      .project-detail-description {
+        @apply text-base md:text-lg leading-relaxed text-white-50;
+      }
+
+      .tech-stack-section {
+        @apply space-y-4;
+
+        .section-title {
+          @apply text-xl font-semibold text-white;
+        }
+
+        .tech-stack-tags {
+          @apply flex flex-wrap gap-3;
+
+          .tech-tag {
+            @apply px-4 py-2 bg-black-200 text-white-50 rounded-lg text-sm font-medium hover:bg-black-50 transition-colors duration-300;
+          }
+        }
+      }
+
+      .project-actions {
+        @apply flex gap-4 flex-wrap;
+
+        .btn {
+          @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex-1 text-center;
+        }
+
+        .btn-primary {
+          @apply bg-white text-black hover:bg-white-50;
+        }
+
+        .btn-secondary {
+          @apply bg-black-200 text-white border border-black-50 hover:bg-black-50;
+        }
+      }
+
+      .project-details-grid {
+        @apply grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-black-50;
+
+        .detail-item {
+          @apply space-y-2;
+
+          h4 {
+            @apply text-sm font-semibold text-white-50;
+          }
+
+          p {
+            @apply text-base font-medium text-white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-detail-content {
+      @apply grid-cols-1;
+
+      .project-detail-info {
+        @apply order-last;
+      }
+    }
+  }
 }
 
 /* Hero text slider starts */
@@ -537,4 +636,12 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+/* Keyboard access to existing project hover overlays. */
+#projects .project-image-wrapper:focus-within .project-overlay { opacity: 1; }
+#projects a:focus-visible { outline: 2px solid #d9ecff; outline-offset: 4px; }
+@media (hover: none) { #projects .project-overlay { opacity: 1; background: transparent; align-items: flex-end; padding-bottom: 1rem; } }
+@media (prefers-reduced-motion: reduce) {
+  #projects .project-image, #projects .project-overlay, #projects .project-card, #skills .tech-card-animated-bg { transition: none; }
+  #projects .project-image-wrapper:hover .project-image { transform: none; }
 }
